@@ -9,20 +9,35 @@
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background-color: #f8f9fa;
       color: #333;
-      padding: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #1b4f72; /* Deep blue: accessible contrast */
+      color: #ffffff;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    .description {
+      background-color: #eaf2f8;
+      color: #154360;
+      text-align: center;
+      padding: 15px 20px;
+      font-size: 1.1em;
+      margin: 0;
+    }
+
+    .content {
+      padding: 30px 20px;
       max-width: 1000px;
       margin: auto;
-    }
-
-    h1 {
-      text-align: center;
-      color: #1b4f72;
-    }
-
-    p.description {
-      text-align: center;
-      font-size: 1.1em;
-      margin-bottom: 40px;
     }
 
     .course-grid {
@@ -34,11 +49,11 @@
 
     .course-card {
       background-color: #ffffff;
-      border: 2px solid #d1d5da;
-      border-radius: 10px;
+      border: 3px solid #d6eaf8;
+      border-radius: 12px;
       width: 300px;
-      padding: 16px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 18px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
       transition: transform 0.2s;
     }
 
@@ -49,13 +64,14 @@
     .course-title {
       font-size: 1.1em;
       font-weight: bold;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
       color: #1b4f72;
     }
 
     .course-card p {
       font-size: 0.95em;
       margin-bottom: 12px;
+      color: #333;
     }
 
     .launch-btn {
@@ -74,44 +90,59 @@
     .launch-btn:hover {
       background-color: #005fa3;
     }
+
+    @media (max-width: 600px) {
+      .course-card {
+        width: 90%;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Data Basics: Online Learning Hub</h1>
-  <p class="description">Explore foundational data courses developed for conservation professionals.</p>
 
-  <div class="course-grid">
+  <header>
+    <h1>Data Basics: Online Learning Hub</h1>
+  </header>
 
-    <div class="course-card">
-      <div class="course-title">Demystifying data</div>
-      <p>In this session, participants will gain a clear understanding of key data terminology and explore the full data lifecycle from initial creation to its transformation into a powerful asset for informed decision-making.</p>
-      <a class="launch-btn" href="https://cfc-training.github.io/DemystifyingData_EN/#/" target="_blank">Launch Course</a>
-    </div>
-
-    <div class="course-card">
-      <div class="course-title">Planning your data with the end use in mind</div>
-      <p>In this session, we’ll delve deeper into the data journey, with a focus on the critical planning stage. Participants will learn how thoughtful planning, centred on the intended use of data, can significantly enhance its value and impact.</p>
-      <a class="launch-btn" href="https://cfc-training.github.io/PLanningYourData_EN/#/" target="_blank">Launch Course</a>
-    </div>
-
-    <div class="course-card">
-      <div class="course-title">Good data</div>
-      <p>In this session, participants will learn the importance of data cleaning, understand the qualities that define 'good' data, and gain hands-on experience using basic Excel functions to clean and prepare data effectively.</p>
-      <a class="launch-btn" href="https://cfc-training.github.io/GoodData_EN/#/" target="_blank">Launch Course</a>
-    </div>
-
-    <div class="course-card">
-      <div class="course-title">Managing data responsibly</div>
-      <p>In this session, participants will explore the ethical and practical considerations of data management, gaining the knowledge needed to handle data responsibly across its collection, storage, sharing, and retention.</p>
-      <a class="launch-btn" href="https://cfc-training.github.io/ManagingData_EN/#/" target="_blank">Launch Course</a>
-    </div>
-
-    <div class="course-card">
-      <div class="course-title">Data basics – check your understanding</div>
-      <p>To help reinforce your learning from the past four lessons, we've prepared a short quiz so you can check your understanding and reflect on what you've learned.</p>
-      <a class="launch-btn" href="https://cfc-training.github.io/DataQuiz_EN/#/" target="_blank">Launch Course</a>
-    </div>
-
+  <div class="description">
+    Explore foundational data courses developed for conservation professionals.
   </div>
+
+  <div class="content">
+    <div class="course-grid">
+
+      <div class="course-card">
+        <div class="course-title">Demystifying data</div>
+        <p>In this session, participants will gain a clear understanding of key data terminology and explore the full data lifecycle from initial creation to its transformation into a powerful asset for informed decision-making.</p>
+        <a class="launch-btn" href="https://cfc-training.github.io/DemystifyingData_EN/#/" target="_blank">Launch Course</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Planning your data with the end use in mind</div>
+        <p>In this session, we’ll delve deeper into the data journey, with a focus on the critical planning stage. Participants will learn how thoughtful planning, centred on the intended use of data, can significantly enhance its value and impact.</p>
+        <a class="launch-btn" href="https://cfc-training.github.io/PLanningYourData_EN/#/" target="_blank">Launch Course</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Good data</div>
+        <p>In this session, participants will learn the importance of data cleaning, understand the qualities that define 'good' data, and gain hands-on experience using basic Excel functions to clean and prepare data effectively.</p>
+        <a class="launch-btn" href="https://cfc-training.github.io/GoodData_EN/#/" target="_blank">Launch Course</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Managing data responsibly</div>
+        <p>In this session, participants will explore the ethical and practical considerations of data management, gaining the knowledge needed to handle data responsibly across its collection, storage, sharing, and retention.</p>
+        <a class="launch-btn" href="https://cfc-training.github.io/ManagingData_EN/#/" target="_blank">Launch Course</a>
+      </div>
+
+      <div class="course-card">
+        <div class="course-title">Data basics – check your understanding</div>
+        <p>To help reinforce your learning from the past four lessons, we've prepared a short quiz so you can check your understanding and reflect on what you've learned.</p>
+        <a class="launch-btn" href="https://cfc-training.github.io/DataQuiz_EN/#/" target="_blank">Launch Course</a>
+      </div>
+
+    </div>
+  </div>
+
 </body>
 </html>
