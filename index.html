@@ -1,62 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Data Basics Training Hub</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 40px;
-      max-width: 800px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      padding: 20px;
+      max-width: 1000px;
       margin: auto;
-      line-height: 1.6;
     }
+
     h1 {
-      color: #2c3e50;
+      text-align: center;
+      color: #1b4f72;
     }
-    .course {
-      margin-bottom: 20px;
+
+    p.description {
+      text-align: center;
+      font-size: 1.1em;
+      margin-bottom: 40px;
     }
+
+    .course-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .course-card {
+      background-color: #ffffff;
+      border: 2px solid #d1d5da;
+      border-radius: 10px;
+      width: 300px;
+      padding: 16px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .course-card:hover {
+      transform: scale(1.02);
+    }
+
+    .course-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+
     .course-title {
-      font-size: 1.2em;
+      font-size: 1.1em;
       font-weight: bold;
+      margin-bottom: 10px;
+      color: #1b4f72;
     }
-    a {
-      color: #007acc;
+
+    .launch-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background-color: #007acc;
+      color: white;
+      border: none;
+      border-radius: 20px; /* Rounded rectangle */
       text-decoration: none;
+      font-weight: bold;
+      text-align: center;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .launch-btn:hover {
+      background-color: #005fa3;
     }
   </style>
 </head>
 <body>
   <h1>Data Basics: Online Learning Hub</h1>
-  <p>Explore foundational data courses developed for conservation professionals.</p>
+  <p class="description">Explore foundational data courses developed for conservation professionals.</p>
 
-  <div class="course">
-    <div class="course-title">Demystifying data</div>
-    <a href="https://cfc-training.github.io/DemystifyingData_EN/#/" target="_blank">Launch Course</a>
-  </div>
+  <div class="course-grid">
 
-  <div class="course">
-    <div class="course-title">Planning your data with the end use in mind</div>
-    <a href="https://cfc-training.github.io/PLanningYourData_EN/#/" target="_blank">Launch Course</a>
-  </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x150?text=Demystifying+Data" alt="Demystifying Data thumbnail">
+      <div class="course-title">Demystifying data</div>
+      <a class="launch-btn" href="https://cfc-training.github.io/DemystifyingData_EN/#/" target="_blank">Launch Course</a>
+    </div>
 
-  <div class="course">
-    <div class="course-title">Good data</div>
-    <a href="https://cfc-training.github.io/GoodData_EN/#/" target="_blank">Launch Course</a>
-  </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x150?text=Planning+Your+Data" alt="Planning Your Data thumbnail">
+      <div class="course-title">Planning your data with the end use in mind</div>
+      <a class="launch-btn" href="https://cfc-training.github.io/PLanningYourData_EN/#/" target="_blank">Launch Course</a>
+    </div>
 
-  <div class="course">
-    <div class="course-title">Managing data responsibly</div>
-    <a href="https://cfc-training.github.io/ManagingData_EN/#/" target="_blank">Launch Course</a>
-  </div>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x150?text=Good+Data" alt="Good Data thumbnail">
+      <div class="course-title">Good data</div>
+      <a class="launch-btn" href="https://cfc-training.github.io/GoodData_EN/#/" target="_blank">Launch Course</a>
+    </div>
 
-  <div class="course">
-    <div class="course-title">Data basics – check your understanding</div>
-    <a href="https://cfc-training.github.io/DataQuiz_EN/#/" target="_blank">Launch Course</a>
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x150?text=Managing+Data+Responsibly" alt="Managing Data Responsibly thumbnail">
+      <div class="course-title">Managing data responsibly</div>
+      <a class="launch-btn" href="https://cfc-training.github.io/ManagingData_EN/#/" target="_blank">Launch Course</a>
+    </div>
+
+    <div class="course-card">
+      <img src="https://via.placeholder.com/300x150?text=Data+Basics+Quiz" alt="Data Basics Quiz thumbnail">
+      <div class="course-title">Data basics – check your understanding</div>
+      <a class="launch-btn" href="https://cfc-training.github.io/DataQuiz_EN/#/" target="_blank">Launch Course</a>
+    </div>
+
   </div>
 </body>
 </html>
