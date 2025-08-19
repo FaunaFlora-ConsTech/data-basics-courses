@@ -1,1 +1,1 @@
-# data-basics-courses
+This five-lesson course introduces you to essential data concepts, covering the full data lifecycle from creation to efficient and responsible management. It emphasises the importance of planning with end goals in mind, ensuring data quality through cleaning, and managing data responsibly with ethical considerations. A final quiz helps reinforce key learnings and assess understanding.
